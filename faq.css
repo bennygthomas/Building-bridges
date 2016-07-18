@@ -1,0 +1,100 @@
+html {
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+	background: #507642;
+	line-height: 1.6em;
+}
+
+h1, h3{
+	margin-top: 2%;
+	text-align: center;
+	text-decoration: none;
+}
+
+.logo {
+	float: left;
+	padding-left: 0;
+	box-shadow: 3px -2px 6px 0px #55c955;
+	border-radius: 5%;
+}
+
+.main{
+	margin: 3%;
+	box-shadow: 2px 2px 5px 5px #ccc;
+	padding: 2%;
+	border-radius: 10px;
+}
+
+.ques{
+	color: #eaec40;
+	font-style: italic;
+	
+}
+
+.nav{
+	margin-top: 2%;
+	margin-bottom: 8%;
+}
+
+.nav li{
+	display: inline;
+	margin-left: 5%;
+
+	padding-left: 2px;
+	font-size: 24px;
+	border-left: 2px solid #eaec40;
+}
+
+.nav li:hover{
+	background: #eaec40;
+	color: #000;
+	border-radius: 5%;
+	transition: background 2s, text 2s;
+
+}
+
+.nav li a{
+	text-decoration: none;
+	color: inherit;
+}
+
+.nav li{
+	transition: background 2s, text 2s;
+}
+
+/*Responsive Styles*/
+
+@media screen and (max-width : 900px){
+
+	/*Make dropdown links appear inline*/
+	.nav li {
+		position: static;
+		display: block;
+		padding: 0px;
+		text-align: center;
+	}
+	/*Create vertical spacing*/
+	.nav li {
+		margin-bottom: 1px;
+	}
+	/*Make all menu links full width*/
+	.nav li, .nav li a {
+		width: auto;
+	}
+
+	.logo {
+		display: none;
+	}
+
+	.nav {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	ul {
+		padding: 0px;
+	}
+}
+
+
+

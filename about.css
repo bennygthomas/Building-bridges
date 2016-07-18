@@ -1,0 +1,112 @@
+html {
+	font-family: 'Raleway', sans-serif;
+	
+}
+
+body {
+	background: #507642;
+	color: #fff;
+}
+
+p {
+	line-height: 1.6;
+}
+
+.main{
+	margin-left: 2%;
+	margin-right: 5%;
+	margin-top: 5%;
+	text-align: justify;
+	padding: 2px;
+	
+}
+
+h1{
+	text-align: center;
+}
+
+.logo {
+	float: left;
+	margin-top: -1%;
+	padding-left: 0;
+	box-shadow: 3px -2px 6px 0px #55c955;
+	border-radius: 5%;
+}
+
+.nav ul li{
+	display: inline;
+	margin-left: 5%;
+
+	padding-left: 2px;
+	font-size: 24px;
+	border-left: 2px solid #eaec40;
+
+
+}
+
+.nav ul li:hover{
+	background: #eaec40;
+	color: #fff;
+	border-radius: 5%;
+	transition: background 2s, text 2s;
+}
+
+.profile{
+	float: left;
+	padding: 2%;
+	border-left: 2px solid #eaec40;
+	border-top: 2px solid #eaec40;
+	border-bottom: 2px solid #eaec40;
+	border-right: 2px solid #eaec40;
+	border-radius: 15px;
+	box-shadow: 2px 2px 5px 5px #ccc;
+}
+
+h2{
+	border-left: 2px solid #eaec40;
+	padding-left: 2px;
+}
+
+a { color: inherit; } 
+
+.nav ul li a {
+	text-decoration: none;
+}
+
+.nav li{
+	transition: background 2s, text 2s;
+}
+
+/*Responsive Styles*/
+
+@media screen and (max-width : 900px){
+	/*Make dropdown links appear inline*/
+	.nav ul li {
+		position: static;
+		display: block;
+		padding: 0px;
+		text-align: center;
+	}
+	/*Create vertical spacing*/
+	.nav ul li {
+		margin-bottom: 1px;
+	}
+	/*Make all menu links full width*/
+	.nav ul li, .nav ul li a {
+		width: auto;
+	}
+
+	.logo {
+		display: none;
+	}
+
+	.nav {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	ul {
+		padding: 0px;
+	}
+}
+

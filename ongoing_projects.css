@@ -1,0 +1,109 @@
+
+html body{
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+	background: #507642;
+	line-height: 1.6em;
+}
+
+h1 {
+	text-align: center;
+	font-size: 30px;
+	font-family: sans-serif;
+	color: #fff;
+	margin-bottom: 2%;
+}
+
+ul li{
+	display: inline;		
+	margin-left: 5%;
+
+	padding-left: 2px;
+	font-size: 24px;
+	border-left: 2px solid #eaec40;	/*giving it the extra awesomeness on the left*/
+
+}
+
+ul li:hover{
+	background: #eaec40;
+	color: #000;
+	border-radius: 5%;
+	transition: background 2s, text 2s;
+
+}
+
+ul li a{
+	text-decoration: none;
+	color: inherit;
+}
+
+ul li{
+	transition: background 2s, text 2s;
+}
+
+.logo {
+	float: left;
+	padding-left: 0;
+	margin-top: -4%;
+	margin-left: 0%;
+	box-shadow: 3px -2px 6px 0px #55c955;
+	border-radius: 5%;
+}
+
+.table {
+	margin-top: 4%;
+	margin-right: 2%;
+	margin-left: 2%;
+}
+
+@media screen and (max-width : 900px){
+	/*Make dropdown links appear inline*/
+	.nav li {
+		position: static;
+		display: block;
+		padding: 0px;
+		text-align: center;
+	}
+	/*Create vertical spacing*/
+	.nav li {
+		margin-bottom: 1px;
+	}
+	/*Make all menu links full width*/
+	.nav li, .nav li a {
+		width: auto;
+	}
+
+	.logo {
+		display: none;
+	}
+
+	.nav {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	ul {
+		padding: 0px;
+	}
+}
+
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width:900px) {
+
+	/*Force table to not behave like one*/
+table, th, td, tr{
+	display: block;
+}
+
+tr {
+	border: 1px solid #eaec40;
+}
+
+td {
+	border: none;
+	display: block;
+	text-align: center;
+	width: 100%;
+	padding: 0.1%;
+}
+
+}

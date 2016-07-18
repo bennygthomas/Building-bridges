@@ -1,0 +1,161 @@
+html {
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+	min-height: 100%;
+	line-height: 1.6em;
+}
+
+body {
+	min-height: 100%;
+}
+
+html {
+	background: url(background_image.jpg) no-repeat center center fixed; /*used the first method on this page - https://css-tricks.com/perfect-full-page-background-image/*/
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.header{
+	text-align: center;
+	font-size: 36px;
+	font-family: sans-serif;
+	color: #fff;
+	margin-bottom: 1%;
+}
+
+.logo {
+	float: left;
+	margin-top: 0px;
+	padding-left: 0.25%;
+	box-shadow: 3px -2px 6px 0px #55c955;
+	border-radius: 5%;
+}
+
+span {
+	font-size: 14px;
+	font-style: italic;
+	color: #eaec40;
+}
+
+
+
+.nav ul li{
+	display: inline;		
+	margin-left: 5%;
+
+	padding-left: 2px;
+	font-size: 24px;
+	border-left: 2px solid #eaec40;	/*giving it the extra awesomeness on the left*/
+
+}
+
+.overlay{
+	position: fixed;
+  	top: 0;
+  	left: 0;
+  	bottom: 0;
+  	width: 100%;
+  	z-index: 10;
+  	background-color: rgba(0,0,0,0.5); /*dim the background*/
+  	overflow: auto;
+}
+
+.menu li:hover{
+	background: #eaec40;
+	color: #000;
+	border-radius: 5%;
+}
+
+.menu li{
+	transition: background 2s, text 2s;
+}
+
+.content{
+	margin-top: 7%;
+	list-style: none;
+	margin-right: 0;
+	margin-left: 60%;
+
+
+}
+
+.content li{
+	
+	list-style: square;
+}
+
+a { 
+	color: inherit; 
+
+} 
+
+.menu li a {
+	text-decoration: none;
+}
+
+.content p {
+	font-style: italic;
+}
+
+
+.contact {
+	margin-top: 0px%;
+	margin-left: 0;
+
+	padding-left: 0.5%;
+	border-left: 2px solid #eaec40;
+	
+}
+
+/*Responsive Styles*/
+
+@media screen and (max-width : 900px){
+	/*Make dropdown links appear inline*/
+
+	ul.menu li {
+		position: static;
+		display: block;
+		padding: 0px;
+		text-align: center;
+	}
+	/*Create vertical spacing*/
+	ul.menu li {
+		margin-bottom: 1px;
+	}
+	/*Make all menu links full width*/
+	ul.menu li, ul.menu li a {
+		width: auto;
+	}
+
+	.logo {
+		display: none;
+	}
+
+	ul.menu {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	ul {
+		padding: 0px;
+	}
+
+	.content{
+	margin-top: 2%;
+	list-style: none;
+	margin: 2%;
+}
+
+	.contact {
+		margin: 1%;
+		padding-left: 1%;
+		text-align: left;
+	}
+
+}
+
+
+
+
